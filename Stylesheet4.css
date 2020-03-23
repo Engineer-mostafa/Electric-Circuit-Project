@@ -1,0 +1,210 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Century Gothic','Caviar Dreams','Arial';
+	background-color: #323;
+	color: aliceblue;
+}
+a {
+	text-decoration: none;
+	color: #323;
+	font-weight: bold;
+}
+
+header p {
+	margin-top: -0.5em;
+	margin-left: 3.2vw;
+	z-index: 6;
+	font-size: 0.95vw;
+	color: #2266CC;
+}
+.fl {
+	float: right;
+	font-size: large;
+}
+.fl span {
+	color: red;
+}
+.clear {
+	clear: both;
+}
+.logo {
+	margin-top: 1em;
+	width: 30vw;
+	margin-left: 1vw;
+	z-index: 5;
+}
+
+.main {
+	display: block;
+}
+
+
+
+.elements {
+	background-color: rgba(255,255,255,1);
+	grid-template-columns: auto auto auto auto auto auto ;
+	color: rgba(0,0,0,1);
+	list-style: none;
+	display: grid;
+	margin: 0;
+	padding-left: 0;
+}
+.elements li {
+	background-color: #ffffff;
+	color: #323;
+	border-width: 0.1vw;
+	border-style: solid;
+	border-color: rgb(180,180,180);
+	padding: 1vw 2vw;
+	text-align: center;
+	transition: 0.4s;
+}
+.elements li:hover {
+	border-width: 0.1vw;
+	border-style: solid;
+	border-color: rgb(120,160,250);
+	background-color: rgb(70,120,190);
+	color: aliceblue;
+	padding: 1vw 8vw;
+	text-align: center;
+}
+#Delete {
+	vertical-align:central;
+	padding-top: 2.8vw;
+	cursor: pointer;
+}
+#Delete:hover {
+	padding-top: 3vw;
+	border-color: rgb(200,100,100);
+	background-color: rgb(200,100,100);
+}
+
+/*.elements li:Active{
+	border-width: 0.2vw;
+	border-style: solid;
+	background-color: rgb(70,120,190);
+	color: aliceblue;
+	padding: 1vw 8vw;
+	text-align: center;
+	border-color: rgb(120,160,250);
+}*/
+#Delete:active{
+	background-color: rgb(160,10,10);
+	border-color: rgb(255,130,130);
+}
+
+
+.Grid {
+	background-color: rgba(255,255,255,1);
+	grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
+	color: rgba(0,0,0,1);
+	display: grid;
+	margin: 0;
+	padding-left: 0;
+}
+.Grid img {
+	position: absolute;
+	margin: -2.5vw 0 0 -3.9vw ;
+	width: 6.1vw;
+	
+}
+	
+.Grid div {
+	text-align: center;
+	font-size: 1vw;
+	color: rgba(0,0,0,0.3);
+	border-width: 0.1vw;
+	border-style: solid;
+	border-color: rgb(220,220,220);
+	padding: 2.34vw 0;
+	z-index: 0;
+}
+
+
+.Grid div:hover {
+	border-width: 0.1vw;
+	border-color: rgb(230,60,120);
+	cursor: pointer;
+}
+
+.elements li {
+	font-size: 1.7vw;
+	display: inline;
+	text-align: center;
+}
+.cont {
+	display: grid;
+	grid-template-columns: auto auto;
+	transition: 0.4s;
+	margin: 0 0;
+	padding: 0;
+}
+.cont div {
+	border-style: solid;
+	border-width: 0;
+	background-color: rgba(10,10,10,0);
+	font-size: 0;
+	transition: 0.4s;
+	width: 30px;
+	margin-left: 30%;
+}
+.elements li:hover > .cont div
+{
+	border-width: 0.14vw;
+	border-color: rgb(120,160,250);
+	font-size: 1vw;
+}
+.elements li:hover > .cont
+{
+	margin: 0 -6vw 0 -3.6vw;
+	cursor: pointer;
+
+}
+.elements li:hover {
+	font-size: 0.8vw;
+}
+.elements li img {
+	text-align: center;
+	width: 0;
+	transition: 0.4s;
+	padding: 0;
+	margin: 0;
+}
+.elements li:hover > img {
+	width: 10vw;
+}
+.cont div:hover{
+	background-color: rgba(10,10,10,0.2);
+}
+.uls li {
+	list-style-type: none;
+	margin: 10px 10px 10px;
+}
+.uls {
+text-align: center;
+}
+.l {
+	margin-left: 50px;
+	font-family: monterat;
+	font-size: large;
+
+}
+.but {
+	padding: 0 10vw;
+	cursor: pointer;
+	background-color: rgba(220,50,90,0.7);
+	border-width: 3px;
+	border-style: solid;
+	border-color: rgb(255,100,150);
+	transition: 0.2s;
+	font-size: 3vw;
+	font-family: 'Century Gothic','Caviar Dreams','Arial';
+}
+
+.but:hover {
+	border-color: rgb(255,255,255);
+	background-color: rgba(255,255,255,1);
+}
+
+

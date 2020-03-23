@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta charset="utf-8" />
+	<title>Create a circuit</title>
+	<link rel="stylesheet" href="https://use.typekit.net/oov2wcw.css">
+	<link rel="stylesheet" href="Stylesheet4.css" />
+	<script src="main.js"></script>
+</head>
+<body>
+	<header>
+		<a href="index.html">
+			<img class="logo" src="Logo.png" alt="Logo">
+		</a>
+		<p>Power'em is a CAD tool used to solve AC & DC circuits.</p>
+		<p class="fl"> <span>Note: </span> n in the grid refer to No.node</p>
+	</header>
+	<div class="clear"></div>
+	<nav>
+			<ul class="uls">
+				<li>
+					<button class="but" onclick="Txt()">Analyse</button>
+				</li>
+			</ul>
+		</nav>
+	<div class="main">
+		<ul class="elements">
+			<li  id="Vss"><p>Vss</p><img src='elements/Vss.png'>
+				<div class="cont">
+				<div id="Vssn1" class="n1" onclick="myFunction(this.id)">n1</div>
+				<div id="Vssn2" class="n2" onclick="myFunction(this.id)">n2</div>
+
+				</div></li>
+			<li  id="Iss"><p>Iss</p><img src='elements/Iss.png'>
+			<div class="cont">
+				<div id="Issn1" class="n1" onclick="myFunction(this.id)">n1</div>
+				<div id="Issn2" class="n2" onclick="myFunction(this.id)">n2</div>
+				</div></li>
+			<li  id="Res"><p>Res</p><img src='elements/Res.png'>
+			<div class="cont">
+				<div  id="Resn1" class="n1" onclick="myFunction(this.id)">n1</div>
+				<div  id="Resn2" class="n2" onclick="myFunction(this.id)">n2</div>
+				</div></li>
+			<li  id="Cap"><p>Cap</p><img src='elements/Cap.png'>
+			<div class="cont">
+				<div  id="Capn1" class="n1" onclick="myFunction(this.id)">n1</div>
+				<div  id="Capn2" class="n2" onclick="myFunction(this.id)">n2</div>
+				</div></li>
+			<li  id="Lnd"><p>Lnd</p><img src='elements/Lnd.png'>
+			<div class="cont">
+				<div  id="Lndn1" class="n1" onclick="myFunction(this.id)">n1</div>
+				<div  id="Lndn2" class="n2" onclick="myFunction(this.id)">n2</div>
+				</div></li>
+			<li  id="Delete" onclick="Delete()">Delete</li>
+		</ul>
+		<br />
+		<div class="Bottom">
+			<script>
+				function grid(el) {
+					var container = document.createElement("div");
+					container.id = "container";
+					container.className = "Grid";
+					for (i = 1; i <= 16 * 6; i++) {
+						var row = document.createElement("div");
+						row.className = "row";
+						row.id = (i<10)? "n0" + i : "n"+ i; 
+						row.innerHTML = row.id;
+						container.appendChild(row);
+					};
+					el.appendChild(container);
+				};
+				grid(document.body);
+			</script>
+			
+		</div>
+	</div>
+</body>
+</html>
+<script>
+	
+</script>
+
+
+
+
+
+
